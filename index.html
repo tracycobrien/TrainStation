@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Schedule</title>
+	<link rel="stylesheet" type="text/css" href="assets/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/train.css">
+      <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+</head>
+<body>
+<div class="container">
+
+<div class="jumbotron">
+	<h1>Train Tracking Device</h1>
+
+</div>
+		<div id="tableBorder">
+		<div id="tableHeader"><p>Current Train Schedule</p></div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Train Name</th>
+						<th>Destination</th>
+						<th>Frequency (Minutes)</th>
+						<th>Next Arrival</th>
+						<th>Minutes Away</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>East Corridor</td>
+						<td>NYC</td>
+						<td>30</td>
+						<td>13:30</td>
+						<td>17</td>
+					</tr>
+				</tbody>
+			</table>
+		 </div>
+
+
+
+		 <div id="tableHeader"><p>Add A Train</p></div>
+
+		 <div class="time"><p>Current Time</p><span id="currentTime"></span></div>
+
+		 <form>
+		 	<div class="row">
+			<div class="col-xs-6 col-xs-offset-3">
+				<form id="newEmployeeForm">
+					<div class="form-group">
+						<label>Train Name</label>
+						<input type="text" id="trainName" class="form-control" placeholder="Northeast Corridor Line">
+					</div>
+					<div class="form-group">
+						<label>Destination</label>
+						<input type="text" id="destination" class="form-control" placeholder="NYC-Trenton">
+					</div>
+					<div class="form-group">
+						<label>First Train Time (HH:mm - Military Time)</label>
+						<input type="text" id="firstTrain" class="form-control" placeholder="01:00">
+					</div>
+					<div class="form-group">
+						<label>Frenquency (Minutes)</label>
+						<input type="text" id="frequency" class="form-control" placeholder="30">
+					</div>
+					
+					
+					<div class="form-group text-center">
+						<button class="btn btn-primary" id="submit">
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		</form>
+
+
+
+
+</div>
+</body>
+
+
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+
+
+<script type="text/javascript" src="javascript/train.js"></script>
+</body>
+</html>
