@@ -105,3 +105,9 @@ $('.table > tbody').append("<tr><td>" + trainName + "</td><td>" + destination + 
 	+ frequency + "</td><td>" + nextArrival + "</td><td>" + tMinutesTillTrain + "</td></tr>");
 
 });
+
+$(document).on("click", ".arrival", function() {
+	keyref = $(this).attr("data-key");
+	database.ref().child(keyref).remove();
+	window.location.reload();
+  });

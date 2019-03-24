@@ -4,25 +4,39 @@
 	color: white;
 	margin-left: 10px;
 }
-
+.wallpaper 
+{ 
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	
+ }
 .jumbotron
 {
 	text-align: center;
+	background-color: #337ab7;
+	color: black;
 }
 
 #tableHeader
 {
-	margin-top: 20px;
 	background-color: #337ab7;
+	margin-top: 20px;
+	color:black;
 }
 
 
 
 #tableBorder
 {
+	background-image: url("./images/ilinois_terminal.jpg");
+	opacity: 40px;
 	border-left: 2px solid lightblue;
 	border-right: 2px solid lightblue;
 	border-bottom: 2px solid lightblue;
+	font-style: bold;
 }
 
 .time
