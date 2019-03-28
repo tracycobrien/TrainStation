@@ -3,21 +3,15 @@
 	font-size: 18px;
 	color: white;
 	margin-left: 10px;
+	font-weight:bolder;
 }
-.wallpaper 
-{ 
-	
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	
- }
+
 .jumbotron
 {
 	text-align: center;
 	background-color: #337ab7;
 	color: black;
+	font-weight: bolder;
 }
 
 #tableHeader
@@ -25,6 +19,7 @@
 	background-color: #337ab7;
 	margin-top: 20px;
 	color:black;
+	font-weight: bolder;
 }
 
 
@@ -32,11 +27,11 @@
 #tableBorder
 {
 	background-image: url("./images/ilinois_terminal.jpg");
-	opacity: 40px;
 	border-left: 2px solid lightblue;
 	border-right: 2px solid lightblue;
 	border-bottom: 2px solid lightblue;
-	font-style: bold;
+	font-style: 200px;
+	color: aliceblue;
 }
 
 .time
@@ -46,4 +41,5 @@
 	width: 120px;
 	background-color: #337ab7;
 	text-align: center;
+	font-weight: bolder;
 }

@@ -14,7 +14,7 @@ var database = firebase.database();
 var nextArrival;
 var tMinutesTillTrain;
 
-// Live Time of The Day 
+// Current Time
 
 var updateTime = function(){
 	var now = moment().format('hh:mm');
